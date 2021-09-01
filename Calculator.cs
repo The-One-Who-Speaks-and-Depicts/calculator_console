@@ -65,32 +65,35 @@ namespace calculator_console
             }
         }
 
-        public bool Run()
+        public void Run()
         {
-            switch (loopCondition)
+            while (true)
             {
-                case LoopCondition.start:
-                    Start();
-                    break;
-                case LoopCondition.flow:
-                    Flow();
-                    break;
-                default:
-                    break;
-            }                
-            if (res != null)
-            {
-                loopCondition = LoopCondition.flow;
-                Console.WriteLine($"Result: {res.ToString()}");
-            }
-            Console.WriteLine("Want to continue? [Y/n]");
-            char decision = Console.ReadKey().KeyChar;
-            if (decision == 'Y' || decision == 'y')
-            {
-                Console.WriteLine();
-                return true;
-            }
-            return false;
+                switch (loopCondition)
+                {
+                    case LoopCondition.start:
+                        Start();
+                        break;
+                    case LoopCondition.flow:
+                        Flow();
+                        break;
+                    default:
+                        break;
+                }                
+                if (res != null)
+                {
+                    loopCondition = LoopCondition.flow;
+                    Console.WriteLine($"Result: {res.ToString()}");
+                }
+                Console.WriteLine("Want to continue? [Y/n]");
+                char decision = Console.ReadKey().KeyChar;
+                if (decision == 'Y' || decision == 'y')
+                {
+                    Console.WriteLine();
+                    continue;
+                }
+                break;
+            }            
         }
 
         public static Calculator getInstance()

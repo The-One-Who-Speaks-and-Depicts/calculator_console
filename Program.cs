@@ -9,7 +9,7 @@ namespace calculator_console
         static void Main(string[] args)
         {
             Calculator calc = Calculator.getInstance();
-            while (calc.Run()) {}
+            calc.Run();
         }
     }
 }
