@@ -1,3 +1,7 @@
+#  Console calculator
+
+![pic](https://cdn1.savepice.ru/uploads/2021/9/2/3d8ea20f2cbd4ec1ed15f2b0a558ffbc-full.png)
+
 # How to work with
 
 ## How to install
