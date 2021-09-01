@@ -2,7 +2,7 @@
 
 ## How to install
 
-        git clone X
+        git clone https://github.com/The-One-Who-Speaks-and-Depicts/calculator_console.git
         cd calculator_console
         dotnet build
         dotnet run
