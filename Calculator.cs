@@ -37,7 +37,6 @@ namespace calculator_console
                 loopCondition = LoopCondition.start;
             }
         }
-
         
         static decimal? Operation(decimal first, decimal second, string op)
         {                      
